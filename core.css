@@ -5,3 +5,252 @@
 .bg-gray{
     background-color: gray;
 }
+[class^="col-"]{
+    float: left;
+    padding: 12px;
+}
+.image-responsive{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card{
+    text-align: center;
+    padding: 20px;
+    border: 1px solid brown;
+    border-radius: 15px;
+}
+
+
+
+.card .card-header{
+    margin-bottom: 12px;
+}
+.card .card-body img:hover{
+filter: brightness(1.3);
+transform: rotate(12deg) scale(1.2);
+}
+.card .card-body p{
+    margin-bottom: 12px;
+}
+
+.card .card-footer button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.card .card-footer button:hover{
+    background-color: tomato;
+    color: white;
+}
+.card .card-footer button::before{
+    font-family: 'Font Awesome 5 Free';
+    content: '\f291';
+    font-weight: bold;
+
+}
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .col-xs-1{
+        width: 8.33%;
+    }
+    .col-xs-2{
+        width: calc(2 * 8.33%);
+    }
+    .col-xs-3{
+        width: calc(3 * 8.33%);
+    }
+    .col-xs-4{
+        width: calc(4 * 8.33%);
+    }
+    .col-xs-5{
+        width: calc(5 * 8.33%);
+    }
+    .col-xs-6{
+        width: calc(6 * 8.33%);
+    }
+    .col-xs-7{
+        width: calc(7 * 8.33%);
+    }
+    .col-xs-8{
+        width: calc(8 * 8.33%);
+    }
+    .col-xs-9{
+        width: calc(9 * 8.33%);
+    }
+    .col-xs-10{
+        width: calc(10 * 8.33%);
+    }
+    .col-xs-11{
+        width: calc(11 * 8.33%);
+    }
+    .col-xs-12{
+        width: calc(12 * 8.33%);
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+     .col-s-1{
+        width: 8.33%;
+    }
+    .col-s-2{
+        width: calc(2 * 8.33%);
+    }
+    .col-s-3{
+        width: calc(3 * 8.33%);
+    }
+    .col-s-4{
+        width: calc(4 * 8.33%);
+    }
+    .col-s-5{
+        width: calc(5 * 8.33%);
+    }
+    .col-s-6{
+        width: calc(6 * 8.33%);
+    }
+    .col-s-7{
+        width: calc(7 * 8.33%);
+    }
+    .col-s-8{
+        width: calc(8 * 8.33%);
+    }
+    .col-s-9{
+        width: calc(9 * 8.33%);
+    }
+    .col-s-10{
+        width: calc(10 * 8.33%);
+    }
+    .col-s-11{
+        width: calc(11 * 8.33%);
+    }
+    .col-s-12{
+        width: calc(12 * 8.33%);
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+     .col-md-1{
+        width: 8.33%;
+    }
+    .col-md-2{
+        width: calc(2 * 8.33%);
+    }
+    .col-md-3{
+        width: calc(3 * 8.33%);
+    }
+    .col-md-4{
+        width: calc(4 * 8.33%);
+    }
+    .col-md-5{
+        width: calc(5 * 8.33%);
+    }
+    .col-md-6{
+        width: calc(6 * 8.33%);
+    }
+    .col-md-7{
+        width: calc(7 * 8.33%);
+    }
+    .col-md-8{
+        width: calc(8 * 8.33%);
+    }
+    .col-md-9{
+        width: calc(9 * 8.33%);
+    }
+    .col-md-10{
+        width: calc(10 * 8.33%);
+    }
+    .col-md-11{
+        width: calc(11 * 8.33%);
+    }
+    .col-md-12{
+        width: calc(12 * 8.33%);
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+     .col-l-1{
+        width: 8.33%;
+    }
+    .col-l-2{
+        width: calc(2 * 8.33%);
+    }
+    .col-l-3{
+        width: calc(3 * 8.33%);
+    }
+    .col-l-4{
+        width: calc(4 * 8.33%);
+    }
+    .col-l-5{
+        width: calc(5 * 8.33%);
+    }
+    .col-l-6{
+        width: calc(6 * 8.33%);
+    }
+    .col-l-7{
+        width: calc(7 * 8.33%);
+    }
+    .col-l-8{
+        width: calc(8 * 8.33%);
+    }
+    .col-l-9{
+        width: calc(9 * 8.33%);
+    }
+    .col-l-10{
+        width: calc(10 * 8.33%);
+    }
+    .col-l-11{
+        width: calc(11 * 8.33%);
+    }
+    .col-l-12{
+        width: calc(12 * 8.33%);
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+     .col-xl-1{
+        width: 8.33%;
+    }
+    .col-xl-2{
+        width: calc(2 * 8.33%);
+    }
+    .col-xl-3{
+        width: calc(3 * 8.33%);
+    }
+    .col-xl-4{
+        width: calc(4 * 8.33%);
+    }
+    .col-xl-5{
+        width: calc(5 * 8.33%);
+    }
+    .col-xl-6{
+        width: calc(6 * 8.33%);
+    }
+    .col-xl-7{
+        width: calc(7 * 8.33%);
+    }
+    .col-xl-8{
+        width: calc(8 * 8.33%);
+    }
+    .col-xl-9{
+        width: calc(9 * 8.33%);
+    }
+    .col-xl-10{
+        width: calc(10 * 8.33%);
+    }
+    .col-xl-11{
+        width: calc(11 * 8.33%);
+    }
+    .col-xl-12{
+        width: calc(12 * 8.33%);
+    }
+}

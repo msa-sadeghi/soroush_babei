@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body, .container{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    display: flex;
+}
+aside{
+    width: 0;
+    height: 100%;
+    background-color: black;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    background-color: tomato;
+}
+input[type="checkbox"]{
+    display: none;
+}
+.container > label{
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    margin: 25px;
+    z-index: 9999;
+}
+
+input[type="checkbox"]:checked ~ aside{
+    width: 20%;
+}
+
+input[type="checkbox"]:checked ~ main{
+    width: 80%;
+}
