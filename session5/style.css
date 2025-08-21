@@ -1,0 +1,72 @@
+@font-face {
+    font-family: vazir;
+    src: url(../Vazirmatn-Light.woff2);
+}
+
+*, html, body{
+    direction: rtl;
+    font-family: vazir;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.d-flex{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    
+}
+nav a {
+    margin: 0 20px;
+}
+a{
+    text-decoration: none;
+    color: #535353;
+}
+i.fa-bell{
+    font-size: 20px;
+}
+
+.border-bottom-3{
+    border-bottom: 2px solid #cecccc98;
+}
+
+input[type=checkbox], label[for="c"]{
+    display: none;
+}
+
+
+@media screen and (max-width:700px){
+    nav{
+        display: none;
+        border-bottom: 2px solid #cecccc98;;
+    }
+    label[for="c"]{
+        display: block;
+    }
+    input[type=checkbox]:checked ~ nav{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 10%;
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+    }
+    nav a{
+        padding: 10px 0;
+        margin: 0;
+        display: block;
+        width: 100%;
+
+    }
+    nav a:hover{
+        background-color: #efefef;
+    }
+}
