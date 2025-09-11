@@ -116,9 +116,14 @@
 // console.log(numbers)
 
 
-// var test = "this is a test"
+var test = "this is a test"
 // console.log(test[0])
 // console.log(test.charAt(2))
 // console.log(test.charCodeAt(2))
 
 var test2 = "blalalal"
+
+var res = test + test2
+console.log(res)
+var res2 = test.concat(["bbb", "cccc"])
+console.log(res2)
