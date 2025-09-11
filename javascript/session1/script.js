@@ -116,16 +116,22 @@
 // console.log(numbers)
 
 
-var test = "this is a test"
+var test = "this is a test "
+
+console.log(test.slice(0, 4))
+console.log(test.substring(0, 4))
+
+
+// test.trim().toLowerCase()
 // console.log(test[0])
 // console.log(test.charAt(2))
 // console.log(test.charCodeAt(2)
-console.log(test.search("test"))
-console.log(test.indexOf("test"))
-console.log(test.includes("test"))
-var test2 = "blalalal"
+// console.log(test.search("test"))
+// console.log(test.indexOf("test"))
+// console.log(test.includes("test"))
+// var test2 = "blalalal"
 
-var res = test + ['kkkk', "hhhh"]
-console.log(res)
-var res2 = test.concat(["bbb", "cccc"])
-console.log(res2)
+// var res = test + ['kkkk', "hhhh"]
+// console.log(res)
+// var res2 = test.concat(["bbb", "cccc"])
+// console.log(res2)
