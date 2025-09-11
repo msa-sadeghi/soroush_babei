@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1200px;
+}
+
+.image-responsive{
+    width: 100%;
+    height: auto;
+}
+
+.wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper input[type="radio"]{
+    position: absolute;
+    top: 280px;
+    z-index: 1;
+}
+
+.wrapper input[type="radio"]:first-child{
+    left: 40%;
+}
+
+.wrapper input[type="radio"]:nth-child(2){
+    left: 45%;
+}
+
+.wrapper input[type="radio"]:nth-child(3){
+    left: 50%;
+}
+
+.wrapper div[id^=img-]{
+    position: absolute;
+    top: 0;
+}
+
+.wrapper div[id^=img-]:nth-child(4){
+    left: 0;
+}
+.wrapper div[id^=img-]:nth-child(5){
+    left: 100%;
+}
+
+.wrapper input[type="radio"]:nth-child(2):checked ~ div#img-2{
+    left: 0;
+}
