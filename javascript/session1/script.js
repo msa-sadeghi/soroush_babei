@@ -5,3 +5,22 @@ let citiesData = [
   {city: 'Mashhad', temp: 16, weather: 'snowy', humidity: 7, windSpeed: 24},
   {city: 'Esfahan', temp: 23, weather: 'Sunny', humidity: 15, windSpeed: 18},
 ]
+
+
+let weather = document.querySelector('.weather')
+let button = document.querySelector('button')
+let input = document.querySelector('input')
+
+
+button.addEventListener('click', function(){
+
+    let city = input.value
+    let citySelected = citiesData.find(function(c){
+        return c.city === city
+    })
+
+    if(citySelected){
+        
+        weather.classList.remove('loading')
+    }
+})
