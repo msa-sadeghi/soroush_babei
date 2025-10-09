@@ -1,32 +1,50 @@
-let img = document.getElementsByTagName('img')[0]
-let btn = document.getElementsByTagName('btn')[0]
+let username = document.querySelector('.username')
+let password = document.querySelector('.password')
+let modal = document.querySelector('.modal')
+let button = document.querySelector('button')
 
 
-let flag = false
-function turnOnOff(){
-    if(flag){
-        img.setAttribute('src', 'bulboff.gif')
-        flag = false
+button.addEventListener('click', 
+    function dataValidation(){
+    let usernameVal = username.value
+    let passwordVal = password.value
+
+    if(usernameVal.length < 12 || passwordVal.length < 8){
+        modal.style.background = 'red'
+        modal.innerHTML = "اطلاعات نادرست است"
+        modal.style.display = 'inline'
+    }else{
+        modal.style.background = 'green'
+        modal.innerHTML = "اطلاعات درست است"
+        modal.style.display = 'inline'
+
+        password.classList.add("red")
+
     }
-    else{
-        img.setAttribute('src', 'bulbon.gif')
-        flag = true
 
-    }
+    setTimeout(function(){
+        modal.style.display = "none"
+    }, 3000)
+}
+)
+
+
+function myFocus(){
+    console.log("focus")
+    username.style.border = "2px solid red"
+}
+
+function myBlur(){
+    console.log("blur")
+    username.style.border = ""
+}
+
+function MydblClick(){
+    console.log("blalal")
 }
 
 
-// یک فرم لاگین پیاده سازی کنید
-//  که از 2 اینپوت و 1 دکمه تشکیل شده باشد
-
-// به محض کلیک روی دکمه فرم، ولیوی اینپوت‌ها بررسی شوند 
-// و اگر با محدودیت های لازم مطابقت نداشتند،
-//  به کاربر پیغام خطا نمایش دهید 
-// و در غیر این صورت پیغام مناسبی را نمایش دهید
-
-
-// اینپوت یوزرنیم حداقل باید 12 کاراکتر
-//  و اینپوت پسورد حداقل باید 8 کاراکتر داشته باشد
-
-// نکته: برای خوشگل‌تر شدن پروژه، برای نمایش پیغام 
-// های مورد نیاز به جای آلرت از مُدال استفاده کنید
+let s = document.getElementById("countries")
+function changeHandler(){
+    console.log(s.value)
+}
