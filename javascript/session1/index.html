@@ -21,21 +21,46 @@
 </head>
 
 <body>
-    <header>
-        <label for="converter">Converter <span class="C">°C</span> to <span class="F">°F</span></label>
-    </header>
+ <section id="starter">
+		<div id="starter-text">
+			Press any key to get the JavaScript event keycode
+		</div>
+	</section>
 
-    <div>
-        <input type="text" id="converter" placeholder="°C">
-    </div>
+	<div id="heading">
+		<h1></h1>
+	</div>
 
-    <p class="result"></p>
+	<div id="ascii">
+		<h1 id="keyCode"></h1>
+	</div>
 
-    <div id="buttons">
-        <button class="convertButton">Convert</button>
-        <button class="resetButton">Reset</button>
-        <button class="changeButton">Change</button>
-    </div>
-</body>
+	<div id="infos">
+		<div class="info-box">
+			<h3>event.key</p>
+				<h2 id="key"></h2>
+		</div>
 
+		<div class="info-box">
+			<h3>event.location</p>
+				<h2 id="location"></h2>
+		</div>
+
+		<div class="info-box">
+			<h3>event.which</p>
+				<h2 id="which"></h2>
+		</div>
+
+		<div class="info-box">
+			<h3>event.code</p>
+				<h2 id="code"></h2>
+		</div>
+	</div>
+
+  <script>
+    document.body.addEventListener('keydown', function(event){
+      console.log(event.keyCode)
+    })
+  </script>
+  </body>
 </html>
