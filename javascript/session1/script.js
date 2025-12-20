@@ -1,6 +1,2 @@
-
-
-let btn = document.querySelector('button')
-btn.addEventListener('contextmenu', function(event){
-    console.log(event)
-})
+let btn = document.querySelector("button")
+console.log(btn.dataset.name)
